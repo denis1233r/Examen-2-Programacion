@@ -60,7 +60,6 @@ public class Ventana extends JFrame {
         pack();
         setLocationRelativeTo(null);
 
-        // REGISTRAR
         btnRegistrar.addActionListener(e -> {
             try {
                 Object generoSel = cboGenero.getSelectedItem();
@@ -85,10 +84,8 @@ public class Ventana extends JFrame {
             }
         });
 
-        // LIMPIAR
         btnLimpiar.addActionListener(e -> limpiarRegistro());
 
-        // BUSCAR
         btnBuscar.addActionListener(e -> {
             try {
                 int codigo = Integer.parseInt(txtBuscarCodigo.getText().trim());
